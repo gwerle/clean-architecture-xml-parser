@@ -13,6 +13,12 @@
     "test": "jest",
     "test:cov": "jest --coverage"
   },
+  "overrides": {
+    "@apollo/server-plugin-landing-page-graphql-playground": "npm:empty-npm-package@1.0.0",
+    "subscriptions-transport-ws": "npm:empty-npm-package@1.0.0",
+    "test-exclude": "^7.0.1",
+    "glob": "^13.0.0"
+  },
   "dependencies": {
     "@apollo/server": "^5.0.0",
     "@as-integrations/express5": "^1.1.2",
@@ -36,11 +42,11 @@
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "@nestjs/testing": "^11.1.0",
-    "@types/jest": "^29.5.14",
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.10.0",
     "@types/supertest": "^6.0.2",
     "eslint": "^9.18.0",
-    "jest": "^29.7.0",
+    "jest": "^30.4.2",
     "pino-pretty": "^13.0.0",
     "prettier": "^3.4.0",
     "supertest": "^7.0.0",

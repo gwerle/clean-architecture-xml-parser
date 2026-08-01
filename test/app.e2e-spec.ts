@@ -34,7 +34,11 @@ describe('GraphQL API (e2e)', () => {
   beforeAll(async () => {
     const moduleRef = await Test.createTestingModule({
       imports: [
-        GraphQLModule.forRoot<ApolloDriverConfig>({ driver: ApolloDriver, autoSchemaFile: true }),
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+          driver: ApolloDriver,
+          autoSchemaFile: true,
+          playground: false,
+        }),
       ],
       providers: [
         { provide: VehicleMakeRepository, useClass: InMemoryVehicleMakeRepository },
